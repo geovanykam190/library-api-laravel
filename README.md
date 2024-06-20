@@ -2,6 +2,7 @@
 
 Esse projeto tem como objetivo, criar uma biblioteca de livros, utilizando API REST e autenticação JWT.
 *Necessário ter instalado o PHP 8.1 ou 8.2 para rodar toda a aplicação
+*Necessário habilitar algumas extensões no php.ini para realizar a correta instalação da aplicação
 
 ## Table of Contents
 
@@ -36,9 +37,19 @@ Esse projeto tem como objetivo, criar uma biblioteca de livros, utilizando API R
     php artisan key:generate
     ```
 
-6. Configure seu banco de dados e conexões no arquivo `.env` criado.
+6. Configure conexões de banco de dados e smtp no arquivo `.env` criado.
 *obs: Altere o parametro QUEUE_CONNECTION do seu .env para: "database". Exemplo: QUEUE_CONNECTION=database
-Isso precisa ser feito para funcionar o Laravel Queue para disparo de email
+Isso precisa ser feito para funcionar o Laravel Queue para disparo de email.
+
+*para o smtp um exemplo:
+MAIL_MAILER=smtp
+MAIL_HOST="smtp.hostinger.com"
+MAIL_PORT=465
+MAIL_USERNAME="sendmail@moosetech.com.br"
+MAIL_PASSWORD="Send@123"
+MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS="sendmail@moosetech.com.br"
+
 
 7. na UserSeeder.php coloque informações de usuario com um email VERDADEIRO, pois ele sera utilizado para o disparo de e-mail com o Laravel Queue.
 
