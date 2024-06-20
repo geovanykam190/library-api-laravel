@@ -1,6 +1,7 @@
 ## Laravel 10 REST API - Laravel Library
 
 Esse projeto tem como objetivo, criar uma biblioteca de livros, utilizando API REST e autenticação JWT.
+*Necessário ter instalado o PHP 8.1 ou 8.2 para rodar toda a aplicação
 
 ## Table of Contents
 
