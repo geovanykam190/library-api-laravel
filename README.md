@@ -36,6 +36,8 @@ Esse projeto tem como objetivo, criar uma biblioteca de livros, utilizando API R
     ```
 
 6. Configure seu banco de dados e conexões no arquivo `.env` criado.
+*obs: Altere o parametro QUEUE_CONNECTION do seu .env para: "database". Exemplo: QUEUE_CONNECTION=database
+Isso precisa ser feito para funcionar o Laravel Queue para disparo de email
 
 7. na UserSeeder.php coloque informações de usuario com um email VERDADEIRO, pois ele sera utilizado para o disparo de e-mail com o Laravel Queue.
 
