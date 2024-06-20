@@ -12,12 +12,12 @@ Esse projeto tem como objetivo, criar uma biblioteca de livros, utilizando API R
 
 1. Clone o repositorio:
    ```bash
-   git clone https://github.com/geovanykam190/Laravel-Library-API.git
+   git clone https://github.com/geovanykam190/library-api-laravel.git
     ```
 
 2. Va até o diretorio da aplicação:
     ```bash
-    cd Laravel-Library-API
+    cd library-api-laravel
     ```
 
 3. Instale as dependencias usando Composer:
@@ -37,19 +37,24 @@ Esse projeto tem como objetivo, criar uma biblioteca de livros, utilizando API R
 
 6. Configure seu banco de dados e conexões no arquivo `.env` criado.
 
+7. na UserSeeder.php coloque informações de usuario com um email VERDADEIRO, pois ele sera utilizado para o disparo de e-mail com o Laravel Queue.
 
-7. Rode o comando customizado do artisan para criar toda a estrutura de funcionamento do sistema:
+8. Rode o comando customizado do artisan para criar toda a estrutura de funcionamento do sistema:
     ```bash
-    php artisan app:create-data-base
+    php artisan app:start-project
     ```
 
-8. Gere o JWT secret key:
+9. Gere o JWT secret key:
    ```bash
    php artisan jwt:secret
     ```
 
+10. Para ativar a API para uso, é necessário rodar o seguinte comando:
+   ```bash
+   php artisan serve
 
-8. Para realizar o envio de emails com o Laravel QUEUE, é necessario iniciar o serviço de trabalho das filas:
+    ```
+10. Para realizar o envio de emails com o Laravel QUEUE, é necessario iniciar o serviço de trabalho das filas em outro terminal diferente do artisan SERVE:
    ```bash
    php artisan queue:work
     ```
