@@ -67,11 +67,11 @@ MAIL_FROM_ADDRESS="sendmail@moosetech.com.br"
    ```bash
    php artisan serve
     ```
-    
-10. Para realizar o envio de emails com o Laravel QUEUE, é necessario iniciar o serviço de trabalho das filas em outro terminal diferente do artisan SERVE:
+
+11. Para realizar o envio de emails com o Laravel QUEUE, é necessario iniciar o serviço de trabalho das filas em outro terminal diferente do artisan SERVE:
    ```bash
    php artisan queue:work
-    ```
+   ```
 
 
 ## Endpoints
