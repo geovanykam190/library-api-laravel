@@ -67,3 +67,7 @@ Isso precisa ser feito para funcionar o Laravel Queue para disparo de email.
    ```bash
    php artisan jwt:secret2
     ```
+11. Gere o JWT secret key:
+   ```bash
+   php artisan jwt:secret
+    ```
