@@ -62,7 +62,11 @@ Isso precisa ser feito para funcionar o Laravel Queue para disparo de email.
    ```bash
    php artisan jwt:secret
     ```
-
+9. Gere o JWT secret key:
+   ```bash
+   php artisan jwt:secret
+    ```
+   
 10. Para ativar a API para uso, é necessário rodar o seguinte comando:
    ```bash
    php artisan serve
