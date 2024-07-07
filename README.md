@@ -66,3 +66,7 @@ Isso precisa ser feito para funcionar o Laravel Queue para disparo de email.
 10. Clone o repositorio:
    ```bash
    git clone https://github.com/geovanykam190/library-api-laravel.git
+
+11. Clone o repositorio2:
+   ```bash
+   git clone https://github.com/geovanykam190/library-api-laravel.git
