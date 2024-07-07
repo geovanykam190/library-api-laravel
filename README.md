@@ -63,12 +63,13 @@ Isso precisa ser feito para funcionar o Laravel Queue para disparo de email.
    php artisan jwt:secret
     ```
    
-10. Para ativar a API para uso, é necessário rodar o seguinte comando:
+111. Clone o repositorio:
    ```bash
-   php artisan jwt:secret
+   git clone https://github.com/geovanykam190/library-api-laravel.git
+    ```
 
-
-11. Para realizar o envio de emails com o Laravel QUEUE, é necessario iniciar o serviço de trabalho das filas em outro terminal diferente do artisan SERVE:
-   ```bash
-   php artisan queue:work
+211. Va até o diretorio da aplicação:
+    ```bash
+    cd library-api-laravel
+    ```
 
