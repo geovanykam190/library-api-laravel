@@ -65,4 +65,3 @@ Isso precisa ser feito para funcionar o Laravel Queue para disparo de email.
 10. Para ativar a API para uso, é necessário rodar o seguinte comando:
    ```bash
    php artisan jwt:secret
-    ```
