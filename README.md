@@ -72,3 +72,38 @@ Isso precisa ser feito para funcionar o Laravel Queue para disparo de email.
    ```bash
    php artisan queue:work
 ```
+
+
+## Endpoints
+A documentação de todos os endpoints pode ser encontrada na seguite URL:
+https://documenter.getpostman.com/view/12595155/2sA3XV8KPM
+
+
+
+#### Autenticar o usuario
+Primeiro, é necessario realizar o Login com usuario e senha na API REST para gerar o Bearer TOKEN e utiliza-lo em outras requisições.
+
+
+
+
+## Erros de Autenticação
+Em caso de erros de autenticação, a API ira retornar o erro no formato Json.
+
+
+Aqui tem um exemplo:
+```json
+{
+    "error": {
+        "message": "The provided token is invalid, has expired, or has been blacklisted.",
+        "type": "OAuthException",
+        "code": "token_could_not_verified",
+        "trace_id": "qOoyG0cl3R8B4x9j"
+    }
+}
+
+O token pode estar:
+expirado
+invalido
+```
+
+Em casos assim, basta autenticar novamente com Login e senha para gerar um novo Token.
