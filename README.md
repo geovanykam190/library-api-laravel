@@ -63,13 +63,7 @@ Isso precisa ser feito para funcionar o Laravel Queue para disparo de email.
    php artisan jwt:secret
     ```
    
-111. Clone o repositorio:
+10. Clone o repositorio:
    ```bash
    git clone https://github.com/geovanykam190/library-api-laravel.git
     ```
-
-211. Va até o diretorio da aplicação:
-    ```bash
-    cd library-api-laravel
-    ```
-
