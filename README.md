@@ -73,7 +73,6 @@ Isso precisa ser feito para funcionar o Laravel Queue para disparo de email.
    php artisan queue:work
    ```
 
-
 ## Endpoints
 A documentação de todos os endpoints pode ser encontrada na seguite URL:
 https://documenter.getpostman.com/view/12595155/2sA3XV8KPM
